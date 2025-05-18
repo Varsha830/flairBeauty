@@ -26,3 +26,9 @@
   <p>Create a MySQL database and import the provided SQL scripts to set up the necessary tables for user authentication and product data.</p>
   <h3>Launch the Application:</h3>
   <p>Open the index.html file in your preferred web browser to explore the application.</p>
+  <h2>Author</h2>
+  <ul><li>
+    Name:Varsha Maurya
+  </li>
+  <li>Github:Varsha830</li>
+  <li>Email:varshamaurya@gmail.com</li></ul>
