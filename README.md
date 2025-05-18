@@ -18,5 +18,11 @@
   </ul>
   <h2>Installation</h2>
   <p>To set up the project locally, follow these steps:</p>
-  <h3>1.Clone the Repository:</h3>
+  <h3>1. Clone the Repository:</h3>
   git clone https://github.com/Varsha830/flairBeauty.git
+  <h3>2. Navigate to the Project Directory:</h3>
+  cd flairBeauty
+  <h3>3. Set Up the Database:</h3>
+  <p>Create a MySQL database and import the provided SQL scripts to set up the necessary tables for user authentication and product data.</p>
+  <h3>Launch the Application:</h3>
+  <p>Open the index.html file in your preferred web browser to explore the application.</p>
