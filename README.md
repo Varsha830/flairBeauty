@@ -16,6 +16,23 @@
   <li><b>PHP</b>: Facilitates server-side scripting for robust backend functionality, including data handling and user authentication.</li>
   <li><b>MySQL</b>: Utilized for database management, securely storing user credentials and other application data.</li>
   </ul>
+  <h2>Project Structure</h2>
+  skincare_website/
+├── css/
+│   └── login.css
+├── db/
+│   └── db.sql
+├── images/
+│   └── (image files)
+├── js/
+│   └── product.js        
+├── pages/
+│   ├── index.html
+│   ├── login.html
+│   └── dashboard.php          
+└── README.md
+
+  
   <h2>Installation</h2>
   <p>To set up the project locally, follow these steps:</p>
   <h3>1. Clone the Repository:</h3>
