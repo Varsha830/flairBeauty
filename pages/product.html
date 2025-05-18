@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flair Beauty</title>
+  <link rel="stylesheet" href="../css/product.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>FLAIR</h2>
+      <hr class="divider" />
+      <p class="category-label">Category</p>
+      <div class="categories">
+        <button data-category="all">
+          All Products <span class="arrow">→</span>
+        </button>
+        <button data-category="cleanser">
+          Cleanser <span class="arrow">→</span>
+        </button>
+        <button data-category="moisturizer">
+          Moisturizer <span class="arrow">→</span>
+        </button>
+        <button data-category="sunscreen">
+          Sunscreen <span class="arrow">→</span>
+        </button>
+      </div>
+    </aside>
+
+    <main class="products-section">
+      <div class="product-grid">
+        <!-- Cleanser Products -->
+        <div class="product-card" data-category="cleanser">
+          <img src="../images/cleanser-1.png" alt="Cleanser 1">
+          <p>Cleanser - 1</p>
+          <p>Rs 199</p>
+          <button>Add to cart</button>
+        </div>
+        <div class="product-card" data-category="cleanser">
+          <img src="../images/cleanser-2.png" alt="Cleanser 2">
+          <p>Cleanser - 2</p>
+          <p>Rs 199</p>
+          <button>Add to cart</button>
+        </div>
+
+        <!-- Moisturizer Products -->
+        <div class="product-card" data-category="moisturizer">
+          <img src="../images/moisturizer-1.png" alt="Moisturizer 1">
+          <p>Moisturizer - 1</p>
+          <p>Rs 199</p>
+          <button>Add to cart</button>
+        </div>
+        <div class="product-card" data-category="moisturizer">
+          <img src="../images/moisturizer-2.png" alt="Moisturizer 2">
+          <p>Moisturizer - 2</p>
+          <p>Rs 199</p>
+          <button>Add to cart</button>
+        </div>
+
+        <!-- Sunscreen Products -->
+        <div class="product-card" data-category="sunscreen">
+          <img src="../images/sunscreen-1.png" alt="Sunscreen 1">
+          <p>Sunscreen - 1</p>
+          <p>Rs 199</p>
+          <button>Add to cart</button>
+        </div>
+        <div class="product-card" data-category="sunscreen">
+          <img src="../images/sunscreen-2.png" alt="Sunscreen 2">
+          <p>Sunscreen - 2</p>
+          <p>Rs 199</p>
+          <button>Add to cart</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Cart Icon -->
+  <div class="cart-icon" onclick="toggleCart()">
+    🛒 <span id="cart-count">0</span>
+  </div>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-sidebar" id="cart-sidebar">
+    <h3>Your Cart</h3>
+    <ul id="cart-items"></ul>
+    <p><strong>Total:</strong> Rs <span id="cart-total">0</span></p>
+    <button onclick="toggleCart()">Close</button>
+  </div>
+
+  
+  <script src="../js/product.js"></script>
+</body>
+</html>

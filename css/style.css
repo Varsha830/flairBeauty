@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    color: white;
+    background-color: #ffffff;
+}
+
+.hero {
+    background: url('../images/front.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 40px;
+    color: white;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.cart {
+    font-size: 24px;
+}
+
+.content {
+    text-align: center;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid white;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: white;
+}
+
+/* Why Flair Section */
+.hero-text-section {
+    padding: 60px 20px;
+    background-color: #3C3D1E;
+
+
+    text-align: center;
+}
+
+.hero-text {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #FFD4A7;
+}
+
+.hero-text p {
+    font-size: 1rem;
+    color: white;
+}
+
+
+
+
+/* Testimonials */
+.testimonials {
+    padding: 60px 20px;
+    background-color: #F7F5EB;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.testimonial-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+}
+
+.testimonial-card {
+    flex: 0 0 260px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px 16px;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-6px);
+}
+
+.testimonial-card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border: 3px solid #FFD4A7;
+}
+
+.testimonial-content h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.testimonial-content p {
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #F7F5EB;
+  
+  padding: 80px 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 0 20px;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-info h2 {
+  color: #3b3b1d;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color:#2C3A28;
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #fff;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color:#3C3D1E ;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #a0761b;
+}
+
+#formMessage {
+  margin-top: 10px;
+  color: green;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    background-color: #fff;
+    color: #333;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h2 {
+    margin-bottom: 10px;
+    color: #ff914d;
+}
+
+.modal-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff914d;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.modal-btn:hover {
+    background-color: #e67e22;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+.footer {
+  background-color: #3C3D1E;
+  color: #e0e0e0;
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-about, .footer-links, .footer-social {
+  flex: 1 1 250px;
+  margin: 10px;
+}
+
+.footer-about h3,
+.footer-links h4,
+.footer-social h4 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.footer-about p {
+  color: #b0b0b0;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 8px 0;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #bbbbbb;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #ffffff;
+}
+
+.footer-social .social-icons a {
+  margin-right: 10px;
+}
+
+.footer-social img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1); /* makes icons white-ish */
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  font-size: 14px;
+  color: #888;
+}

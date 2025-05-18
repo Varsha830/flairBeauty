@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="../css/login.css" />
+  <script>
+    function validateForm() {
+      const email = document.forms["signupForm"]["email"].value.trim();
+      const password = document.forms["signupForm"]["password"].value;
+      const confirmPassword = document.forms["signupForm"]["confirm_password"].value;
+
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        return false;
+      }
+
+      if (password.length < 6) {
+        alert("Password must be at least 6 characters long.");
+        return false;
+      }
+
+      if (password !== confirmPassword) {
+        alert("Passwords do not match.");
+        return false;
+      }
+
+      return true;
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <form name="signupForm" action="register.php" method="post" onsubmit="return validateForm()">
+      <h2>Create Account</h2>
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <input type="password" name="confirm_password" placeholder="Confirm Password" required />
+      <div class="links">
+        <a href="../pages/login.html">Already have an account?</a>
+      </div>
+      <button type="submit">Sign up</button>
+    </form>
+  </div>
+</body>
+</html>

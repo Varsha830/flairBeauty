@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flair Beauty</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="navbar">
+      <div class="logo">FLAIR</div>
+      
+    </div>
+    <div class="content">
+      <h1>BEAUTY FOR EVERYONE</h1>
+      <a href="../pages/signup.html" class="btn">Shop Now</a>
+
+
+    </div>
+  </div>
+
+  <!-- Why Flair Section -->
+  <section class="hero-text-section" id="shop">
+    <div class="hero-text">
+      <h1>WHY FLAIR?</h1>
+      <p>Embrace your natural beauty with Flair Beauty's 100% organic and locally-made body care and cosmetics.</p>
+    </div>
+  </section>
+
+  
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2>WHAT THEY SAY</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <img src="../images/isha.png" alt="Isha Ahuja" />
+        <div class="testimonial-content">
+          <h3>Isha Ahuja, Teacher</h3>
+          <p>Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services.</p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <img src="../images/lisa.png" alt="Maithili Gupta" />
+        <div class="testimonial-content">
+          <h3>Maithili Gupta, Model</h3>
+          <p>Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services.</p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <img src="../images/lisa.png" alt="Lisa Thomas" />
+        <div class="testimonial-content">
+          <h3>Lisa Thomas, Entrepreneur</h3>
+          <p>Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services.</p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <img src="../images/darshana.png" alt="Darshana Sharma" />
+        <div class="testimonial-content">
+          <h3>Darshana Sharma, Student</h3>
+          <p>Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+  <div class="contact-container">
+    <div class="contact-info">
+      <h2>Let's Connect</h2>
+      <p>Have questions or want to know more about Flair Beauty? Drop us a message!</p>
+      <ul>
+        <li><strong>Email:</strong> hello@flairbeauty.com</li>
+        <li><strong>Phone:</strong> +91-9876543210</li>
+        <li><strong>Address:</strong> Surat, Gujarat, India</li>
+      </ul>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <input type="text" placeholder="Your Name" id="name" required />
+      <input type="email" placeholder="Your Email" id="email" required />
+      <textarea placeholder="Your Message" id="message" required></textarea>
+      <button type="submit">Send Message</button>
+      <p id="formMessage"></p>
+    </form>
+  </div>
+</section>
+
+  <!-- Sign In / Sign Up Modal -->
+<div id="authModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2>Welcome to Flair Beauty</h2>
+    <p>Please choose an option:</p>
+    <div class="modal-buttons">
+      <button class="modal-btn" onclick="alert('Redirect to Sign In page')">Sign In</button>
+      <button class="modal-btn" onclick="alert('Redirect to Sign Up page')">Sign Up</button>
+    </div>
+  </div>
+</div>
+<!-- Footer Section -->
+<!-- Dark Theme Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>Flair Beauty</h3>
+      <p>Celebrating beauty in every form. Discover skincare and cosmetics made with love, care, and nature.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#shop">Why Flair</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="../pages/signup.html" onclick="openModal()">Sign Up</a></li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><img src="facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="instagram.png" alt="Instagram" /></a>
+        <a href="#"><img src="twitter.png" alt="Twitter" /></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Flair Beauty. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<script>
+  function openModal() {
+    document.getElementById("authModal").style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById("authModal").style.display = "none";
+  }
+
+  // Optional: Close modal when clicking outside
+  window.onclick = function(event) {
+    var modal = document.getElementById("authModal");
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+    const formMessage = document.getElementById("formMessage");
+
+    if (name === "" || email === "" || message === "") {
+      formMessage.textContent = "Please fill in all fields.";
+      formMessage.style.color = "red";
+      return;
+    }
+
+    formMessage.textContent = "Message sent successfully!";
+    formMessage.style.color = "green";
+
+    // Reset the form (you can remove this if integrating with backend)
+    
+  });
+</script>
+
+
+
+
+</body>
+</html>
