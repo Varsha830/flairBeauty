@@ -30,5 +30,5 @@
   <ul><li>
     Name:Varsha Maurya
   </li>
-  <li>Github:Varsha830</li>
-  <li>Email:varshamaurya@gmail.com</li></ul>
+  <li>Github: Varsha830</li>
+  <li>Email: varshamaurya@gmail.com</li></ul>
