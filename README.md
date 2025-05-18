@@ -16,3 +16,7 @@
   <li><b>PHP</b>: Facilitates server-side scripting for robust backend functionality, including data handling and user authentication.</li>
   <li><b>MySQL</b>: Utilized for database management, securely storing user credentials and other application data.</li>
   </ul>
+  <h2>Installation</h2>
+  <p>To set up the project locally, follow these steps:</p>
+  <h3>1.Clone the Repository:</h3>
+  git clone https://github.com/Varsha830/flairBeauty.git
