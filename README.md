@@ -8,3 +8,11 @@
 <li>Responsive Design: Optimized for both mobile and desktop devices, ensuring a seamless experience across all platforms.</li>
 <li>Dynamic Content: Utilizes JavaScript for real-time interactivity, allowing users to engage with the application effortlessly.</li>
 <li>Rich Media Integration: Incorporates high-quality images and CSS animations to create an aesthetically pleasing environment.</li></ul>
+<h2>Technologies Used</h2>
+<ul>
+  <li><b>HTML5</b>: Provides the foundational structure of the web application, ensuring semantic markup.</li>
+  <li><b>CSS3</b>: Implements advanced styling techniques, including Flexbox and Grid, for a modern layout.</li>
+  <li><b>JavaScript (ES6)</b>: Enhances client-side functionality with modern JavaScript features, enabling dynamic content updates and user interactions.</li>
+  <li><b>PHP</b>: Facilitates server-side scripting for robust backend functionality, including data handling and user authentication.</li>
+  <li><b>MySQL</b>: Utilized for database management, securely storing user credentials and other application data.</li>
+  </ul>
