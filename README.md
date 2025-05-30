@@ -35,12 +35,8 @@
 <h3>4. Launch the Application:</h3>
 <p>Open the index.html file in your preferred web browser to explore the application.</p>
 
-
 <h2>Contributing</h2>
 <p>Contributions are welcome! Please feel free to submit a Pull Request or open an Issue if you have suggestions for improvements.</p>
-
-<h2>License</h2>
-<p>This project is open source and available under the <a href="LICENSE">MIT License</a>.</p>
 
 <h2>Author</h2>
 <ul>
